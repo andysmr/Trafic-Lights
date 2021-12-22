@@ -16,12 +16,34 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         startButton.layer.cornerRadius = 10
+        red.layer.cornerRadius = 100
+        yellow.layer.cornerRadius = 100
+        green.layer.cornerRadius = 100
         // Do any additional setup after loading the view.
     }
 
     @IBAction func makeActionButton() {
+        if red.alpha == 1 && yellow.alpha == 1 && green.alpha == 1 {
+            red.alpha = 0.3
+            yellow.alpha = 1
+            startButton.setTitle("Next", for: .normal)
+                }
+        else if red.alpha != 1 && yellow.alpha == 1 && green.alpha == 1 {
+            red.alpha = 1
+            yellow.alpha = 0.3
+            
+        }
+        else if red.alpha == 1 && yellow.alpha != 1 && green.alpha == 1 {
+            yellow.alpha = 1
+            green.alpha = 0.3
+            
+        }
+        else if red.alpha == 1 && yellow.alpha == 1 && green.alpha != 1 {
+            green.alpha = 1
+            red.alpha = 0.3
+            
+        }
+        }
     }
-    
-    
-}
+
 

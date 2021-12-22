@@ -49,7 +49,7 @@
                                     <fontDescription key="titleFontDescription" type="system" pointSize="30"/>
                                 </buttonConfiguration>
                                 <connections>
-                                    <action selector="makeActionButton" destination="BYZ-38-t0r" eventType="touchUpInside" id="OgZ-sB-OBf"/>
+                                    <action selector="makeActionButton" destination="BYZ-38-t0r" eventType="touchUpInside" id="meg-jv-ccm"/>
                                 </connections>
                             </button>
                         </subviews>
