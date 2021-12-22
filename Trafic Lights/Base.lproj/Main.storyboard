@@ -48,6 +48,9 @@
                                 <buttonConfiguration key="configuration" style="plain" title="Start">
                                     <fontDescription key="titleFontDescription" type="system" pointSize="30"/>
                                 </buttonConfiguration>
+                                <connections>
+                                    <action selector="makeActionButton" destination="BYZ-38-t0r" eventType="touchUpInside" id="OgZ-sB-OBf"/>
+                                </connections>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
@@ -63,6 +66,12 @@
                             <constraint firstItem="tjx-mt-OAj" firstAttribute="top" secondItem="Rcb-yY-fbh" secondAttribute="bottom" constant="47" id="zeL-bf-Wrz"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="green" destination="I1W-ZL-blT" id="pJk-dN-6SV"/>
+                        <outlet property="red" destination="w4J-Is-7bJ" id="E4L-5f-dGc"/>
+                        <outlet property="startButton" destination="tjx-mt-OAj" id="sJG-rO-F50"/>
+                        <outlet property="yellow" destination="zGE-7E-V9U" id="agv-De-rXM"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
