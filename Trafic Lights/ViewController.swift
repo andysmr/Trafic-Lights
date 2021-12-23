@@ -28,7 +28,7 @@ class ViewController: UIViewController {
         if red.alpha != 1 && yellow.alpha != 1 && green.alpha != 1 {
             red.alpha = 1
             yellow.alpha = 0.3
-            startButton.setTitle("Next", for: .normal)
+            startButton.setTitle("NEXT", for: .normal)
                 }
         else if red.alpha == 1 && yellow.alpha != 1 && green.alpha != 1 {
             red.alpha = 0.3
